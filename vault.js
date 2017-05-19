@@ -1,7 +1,6 @@
 'use strict';
 module.exports = function() {
 
-var myMod = function() {
 
     var vault = {};
 
@@ -11,7 +10,7 @@ var myMod = function() {
     }
 
     function getValue(key){
-      if (vault.hasOwnProperty("key")){
+      if (vault.hasOwnProperty(key)){
         return vault.key;
       } else {
         return null;
@@ -26,9 +25,6 @@ var myMod = function() {
     };
 
 };
-
-};
-
 
 // Sets 'secret' values defined by a 'key' word.
 
